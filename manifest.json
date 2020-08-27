@@ -1,0 +1,9 @@
+{
+    "name" : "previsao-tempo",
+    "version" : "1.0",
+    "description" : "Descubra a previsão do tempo em sua cidade",
+    "browser_action" : {
+        "default_popup" : "./view/index.html"
+    },
+    "manifest_version" : 2
+}
