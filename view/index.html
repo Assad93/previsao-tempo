@@ -4,21 +4,159 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Previsão do tempo</title>
   </head>
   <body>
     <h1>Previsão do Tempo</h1>
 
-    <form action="">
-        <label for="">Cidade</label>
-        <select name="" id="optCidades"></select>
-        <label for="">UF</label>
-        <select name="" id="optUFs"></select>
-    </form>
+    <div class="container">
+
+      <!--Formulario-->
+      <div class="card">
+        <div class="card-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">Cidade</label>
+              <select name="" id="optCidades" class="form-control">
+                <option value="">Selecione...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">UF</label>
+              <select name="" id="optUFs" class="form-control">
+                <option value="">Selecione...</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+            <button class="btn btn-primary">Consultar</button>
+          </form>
+        </div>
+      </div>
+      <!--//Formulario-->
+
+     
+    </div>
+
+     <!--Resultado-->
+     <div class="card-deck">
+      <!--Card 01-->
+      <div class="card card-temp">
+        <div class="card-header">Seg. 29</div>
+        <div class="card-body">
+          <i class="fas fa-sun"></i>
+          <div id="max-temp">
+            <i class="fas fa-arrow-up"></i>
+            <span>29°C</span>
+          </div>
+          <div id="min-temp">
+            <i class="fas fa-arrow-down"></i>
+            <span>20°C</span>
+          </div>
+        </div>
+      </div>
+      <!--//Card 01-->
+      <!--Card 02-->
+      <div class="card card-temp">
+        <div class="card-header">Ter. 30</div>
+        <div class="card-body">
+          <i class="fas fa-sun"></i>
+          <div id="max-temp">
+            <i class="fas fa-arrow-up"></i>
+            <span>29°C</span>
+          </div>
+          <div id="min-temp">
+            <i class="fas fa-arrow-down"></i>
+            <span>20°C</span>
+          </div>
+        </div>
+      </div>
+      <!--//Card 02-->
+       <!--Card 03-->
+       <div class="card card-temp">
+        <div class="card-header">Qua. 31</div>
+        <div class="card-body">
+          <i class="fas fa-sun"></i>
+          <div id="max-temp">
+            <i class="fas fa-arrow-up"></i>
+            <span>29°C</span>
+          </div>
+          <div id="min-temp">
+            <i class="fas fa-arrow-down"></i>
+            <span>20°C</span>
+          </div>
+        </div>
+      </div>
+      <!--//Card 03-->
+       <!--Card 04-->
+       <div class="card card-temp">
+        <div class="card-header">Qui. 31</div>
+        <div class="card-body">
+          <i class="fas fa-sun"></i>
+          <div id="max-temp">
+            <i class="fas fa-arrow-up"></i>
+            <span>29°C</span>
+          </div>
+          <div id="min-temp">
+            <i class="fas fa-arrow-down"></i>
+            <span>20°C</span>
+          </div>
+        </div>
+      </div>
+      <!--//Card 04-->
+       <!--Card 05-->
+       <div class="card card-temp">
+        <div class="card-header">Sex. 01</div>
+        <div class="card-body">
+          <i class="fas fa-sun"></i>
+          <div id="max-temp">
+            <i class="fas fa-arrow-up"></i>
+            <span>29°C</span>
+          </div>
+          <div id="min-temp">
+            <i class="fas fa-arrow-down"></i>
+            <span>20°C</span>
+          </div>
+        </div>
+      </div>
+      <!--//Card 05-->
+    </div>
+    <!--//Resultado-->
+
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
